@@ -146,6 +146,14 @@ main > div {
   margin: 40px 16px;
 }
 
+main img,
+main video,
+main iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 input,
 textarea,
 select,
