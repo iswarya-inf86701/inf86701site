@@ -147,7 +147,8 @@ main > div {
 }
 
 main img,
-main video {
+main video,
+main iframe {
   display: block;
   max-width: 100%;
   height: auto;
