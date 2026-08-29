@@ -11,7 +11,9 @@
  */
 
 :root {
+
     /* colors */
+
   --background-color: grey;
   --light-color: #f8f8f8;
   --dark-color: #505050;
@@ -144,6 +146,101 @@ pre {
 
 main > div {
   margin: 40px 16px;
+}
+
+.homepage-section {
+  box-sizing: border-box;
+  padding: 24px;
+  border: 1px solid #bdbdbd;
+  background-color: #d3d3d3;
+}
+
+.eds-block-types {
+  --background-color: #f2f2f2;
+  --text-color: #1f2933;
+  background-color: #e5e7eb;
+}
+
+.eds-block-types main > div {
+  padding: 24px;
+  background-color: white;
+}
+
+.eds-block-types .content-essentials,
+.eds-block-types .list-demo,
+.eds-block-types .code-demo,
+.eds-block-types .icon-demo {
+  border-left: 6px solid #1f4e79;
+}
+
+.eds-block-types .list-demo {
+  border-left-color: #2e7d32;
+}
+
+.eds-block-types .code-demo {
+  border-left-color: #b26a00;
+}
+
+.eds-block-types .icon-demo {
+  border-left-color: #6a1b9a;
+}
+
+.eds-block-types .hero {
+  background-color: #1f4e79;
+}
+
+.eds-block-types .hero h1,
+.eds-block-types .hero p {
+  color: white;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 70%);
+}
+
+.eds-block-types .custom-icon-button {
+  gap: 8px;
+}
+
+.eds-block-types .custom-icon-button .icon,
+.eds-block-types .custom-icon-button .icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.eds-block-types iframe {
+  width: 100%;
+  min-height: 320px;
+  border: 0;
+}
+
+main img,
+main video,
+main iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.featured-media img {
+  width: 240px;
+  max-height: 140px;
+  margin: 16px 0;
+  object-fit: contain;
+}
+
+.featured-media video {
+  width: 520px;
+  margin: 16px 0;
+}
+
+.social-embeds iframe {
+  width: 100%;
+  max-width: 800px;
+  min-height: 450px;
+  border: 0;
+}
+
+.social-embeds .twitter-tweet {
+  max-width: 550px;
+  margin: 0;
 }
 
 input,
