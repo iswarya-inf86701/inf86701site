@@ -13,7 +13,19 @@
 }
 
 .cards .cards-card-body {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
   margin: 16px;
+}
+
+.cards .cards-card-body h3 {
+  margin: 0;
+}
+
+.cards .cards-card-body p {
+  margin: 0;
 }
 
 .cards .cards-card-image {
@@ -21,7 +33,8 @@
 }
 
 .cards > ul > li img {
-  width: 100%;
+  width: min(70%, 180px);
+  margin: 0 auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
