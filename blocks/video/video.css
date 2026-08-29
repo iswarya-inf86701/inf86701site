@@ -1,0 +1,13 @@
+.video {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  border-radius: 8px;
+}
