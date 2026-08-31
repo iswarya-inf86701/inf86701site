@@ -1,21 +1,13 @@
 export default function decorate(block) {
   const link = block.querySelector('a');
 
-  if (!link) {
-    block.innerHTML = '<p>No video URL provided.</p>';
-    return;
-  }
-
-  const videoUrl = link.href;
-
-  block.innerHTML = '';
+  if (!link) return;
 
   const video = document.createElement('video');
 
-  video.src = videoUrl;
   video.controls = true;
-  video.playsInline = true;
   video.preload = 'metadata';
+  video.src = link.href;
 
-  block.append(video);
+  link.replaceWith(video);
 }
